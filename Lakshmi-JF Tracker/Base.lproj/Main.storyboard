@@ -13,7 +13,7 @@
         <!--JF Tracker-->
         <scene sceneID="D7w-ax-uhj">
             <objects>
-                <viewController id="8El-9C-cyR" sceneMemberID="viewController">
+                <viewController id="8El-9C-cyR" customClass="ReportViewController" customModule="Lakshmi_JF_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x1s-Gf-kw0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,6 +34,9 @@
 CA
 </string>
                                 </state>
+                                <connections>
+                                    <action selector="restAT:" destination="8El-9C-cyR" eventType="touchUpInside" id="g02-Do-CSs"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kfF-aI-PyY">
                                 <rect key="frame" x="16" y="189" width="343" height="368"/>
@@ -48,6 +51,9 @@ CA
                         <viewLayoutGuide key="safeArea" id="tb0-C2-UNp"/>
                     </view>
                     <navigationItem key="navigationItem" title="JF Tracker" id="GQj-9X-mK9"/>
+                    <connections>
+                        <outlet property="reportLB" destination="kfF-aI-PyY" id="qFw-eu-cLu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Egs-rK-Wz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +62,7 @@ CA
         <!--Item-->
         <scene sceneID="lSg-hf-rAn">
             <objects>
-                <tableViewController id="2C3-bg-ON8" sceneMemberID="viewController">
+                <tableViewController id="2C3-bg-ON8" customClass="RecordTableViewController" customModule="Lakshmi_JF_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mpx-hh-SOQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
