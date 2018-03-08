@@ -39,7 +39,7 @@ class RecordTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myIdentifier", for: indexPath)
 
         cell.textLabel!.text = AppDelegate.myModel.foods[indexPath.row].name
         cell.detailTextLabel!.text = "\(AppDelegate.myModel.foods[indexPath.row].calories)Cal"
