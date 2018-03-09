@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  Lakshmi-JF Tracker
 //
-//  Created by KK Charli on 3/8/18.
 //  Copyright © 2018 Manjari. All rights reserved.
 //
 
