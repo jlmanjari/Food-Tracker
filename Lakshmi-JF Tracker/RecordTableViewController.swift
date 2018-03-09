@@ -82,12 +82,17 @@ class RecordTableViewController: UITableViewController {
     }
     */
 
+    @IBAction func unwindForNewItem(segue:UIStoryboardSegue){
+        tableView.reloadData()        
+    }
     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        AppDelegate.myModel.increaseTally(forItem: tableView.indexPathForSelectedRow!.row)
+        if segue.identifier == "increaseValue"{
+            AppDelegate.myModel.increaseTally(forItem: tableView.indexPathForSelectedRow!.row)
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

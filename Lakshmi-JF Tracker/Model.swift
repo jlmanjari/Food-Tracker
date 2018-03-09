@@ -26,6 +26,10 @@ class FoodRecorder {
         foods.append(FoodData.init(name: "Popcorn", calories: 106, tally: 1))
         foods.append(FoodData.init(name: "Coke", calories: 140, tally: 1))
         foods.append(FoodData.init(name: "Potato", calories: 152, tally: 1))
+        foods.append(FoodData.init(name: "Daikon", calories: 182, tally: 1))
+        foods.append(FoodData.init(name: "Garlic", calories: 131, tally: 1))
+        foods.append(FoodData.init(name: "Squash", calories: 112, tally: 1))
+        foods.append(FoodData.init(name: "Bean", calories: 233, tally: 1))
     }
     
     
@@ -56,6 +60,11 @@ class FoodRecorder {
         return res + "\nTotal calories consumed \(totalCalories())."
         
     }
+    
+    func addNewItem(name:String, calories:Double){
+        foods.append(FoodData.init(name: name, calories: calories, tally: 0))
+    }
+    
     func reset(){
         for i in 0 ... foods.count - 1 {
             foods[i].tally = 0

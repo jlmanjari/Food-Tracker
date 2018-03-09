@@ -47,7 +47,7 @@ CA
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.79575065677851664" green="0.93459040205051891" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.671611246" blue="0.73951733990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="tb0-C2-UNp"/>
                     </view>
                     <navigationItem key="navigationItem" title="JF Tracker" id="GQj-9X-mK9"/>
@@ -92,8 +92,9 @@ CA
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.671611246" blue="0.73951733990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="bZn-gy-ZS6" kind="unwind" unwindAction="unwindFromTableWithSegue:" id="NRg-Lg-bc7"/>
+                                    <segue destination="bZn-gy-ZS6" kind="unwind" identifier="increaseValue" unwindAction="unwindFromTableWithSegue:" id="NRg-Lg-bc7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -115,20 +116,67 @@ CA
             </objects>
             <point key="canvasLocation" x="-239" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--New Item View Controller-->
         <scene sceneID="fCt-gU-cu5">
             <objects>
-                <viewController id="ek0-RU-0fJ" sceneMemberID="viewController">
+                <viewController id="ek0-RU-0fJ" customClass="NewItemViewController" customModule="Lakshmi_JF_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c25-CV-dkG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.79575065680000001" green="0.9345904021" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IWe-oT-tgH">
+                                <rect key="frame" x="218" y="131" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6sj-Yg-qYE">
+                                <rect key="frame" x="218" y="211" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18a-zb-tL4">
+                                <rect key="frame" x="36" y="134" width="99" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E9-3S-gwv">
+                                <rect key="frame" x="36" y="214" width="99" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3k-Vt-kUP">
+                                <rect key="frame" x="105" y="296" width="164" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.22206907122125186" blue="0.43981527990595914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="  Add" image="add">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gha-Mg-fKY" kind="unwind" identifier="newItem" unwindAction="unwindForNewItemWithSegue:" id="YnX-ZY-GNa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.67161124601958311" blue="0.73951733991114876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="fME-rk-HiF"/>
                     </view>
+                    <connections>
+                        <outlet property="CalTF" destination="6sj-Yg-qYE" id="dsv-0O-J8i"/>
+                        <outlet property="NameTF" destination="IWe-oT-tgH" id="sr2-bq-RhH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXX-Uv-SNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gha-Mg-fKY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="846" y="116"/>
+            <point key="canvasLocation" x="845.60000000000002" y="115.59220389805098"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cuo-ko-K5s">
@@ -148,6 +196,7 @@ CA
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="50" height="50"/>
         <image name="record" width="100" height="100"/>
         <image name="reset" width="100" height="100"/>
     </resources>

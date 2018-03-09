@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5880F57720521D68005AC7AF /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5880F57620521D68005AC7AF /* NewItemViewController.swift */; };
 		60DC005020512FFE009FA26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC004F20512FFE009FA26B /* AppDelegate.swift */; };
 		60DC005220512FFE009FA26B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DC005120512FFE009FA26B /* ViewController.swift */; };
 		60DC005520512FFE009FA26B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DC005320512FFE009FA26B /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5880F57620521D68005AC7AF /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
 		60DC004C20512FFE009FA26B /* Lakshmi-JF Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lakshmi-JF Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DC004F20512FFE009FA26B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60DC005120512FFE009FA26B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				60DC006520519507009FA26B /* RecordTableViewController.swift */,
 				60DC0067205197E0009FA26B /* ReportViewController.swift */,
 				60DC005320512FFE009FA26B /* Main.storyboard */,
+				5880F57620521D68005AC7AF /* NewItemViewController.swift */,
 				60DC005620512FFE009FA26B /* Assets.xcassets */,
 				60DC005820512FFE009FA26B /* LaunchScreen.storyboard */,
 				60DC005B20512FFE009FA26B /* Info.plist */,
@@ -147,6 +150,7 @@
 			files = (
 				60DC006620519507009FA26B /* RecordTableViewController.swift in Sources */,
 				60DC00622051935E009FA26B /* Model.swift in Sources */,
+				5880F57720521D68005AC7AF /* NewItemViewController.swift in Sources */,
 				60DC005220512FFE009FA26B /* ViewController.swift in Sources */,
 				60DC0068205197E0009FA26B /* ReportViewController.swift in Sources */,
 				60DC005020512FFE009FA26B /* AppDelegate.swift in Sources */,
