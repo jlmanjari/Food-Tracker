@@ -2,7 +2,6 @@
 //  ReportViewController.swift
 //  Lakshmi-JF Tracker
 //
-//  Created by KK Charli on 3/8/18.
 //  Copyright © 2018 Manjari. All rights reserved.
 //
 
@@ -21,6 +20,10 @@ class ReportViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func unwindFromTable(segue:UIStoryboardSegue){
+        reportLB.text = AppDelegate.myModel.combinedReport()
     }
     
     @IBAction func restAT(_ sender: UIButton) {

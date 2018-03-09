@@ -2,7 +2,6 @@
 //  RecordTableViewController.swift
 //  Lakshmi-JF Tracker
 //
-//  Created by KK Charli on 3/8/18.
 //  Copyright © 2018 Manjari. All rights reserved.
 //
 
@@ -88,6 +87,7 @@ class RecordTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        AppDelegate.myModel.increaseTally(forItem: tableView.indexPathForSelectedRow!.row)
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
