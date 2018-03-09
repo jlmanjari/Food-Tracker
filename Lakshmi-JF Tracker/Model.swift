@@ -30,7 +30,7 @@ class FoodRecorder {
     
     
     func increaseTally(forItem i:Int){
-        foods[i].tally = +1
+        foods[i].tally += 1
     }
     
     func getCalories(forItem i:Int)->Double {
